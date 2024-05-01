@@ -1,0 +1,183 @@
+    1  vi m.sh
+    2  sh m.sh 
+    3  curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl && chmod +x ./kubectl && sudo mv ./kubectl /usr/local/bin/kubectl
+    4  curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin
+    5  apt install conntrack -y
+    6  minikube start --vm-driver=none
+    7  minikube status
+    8  apt install conntrack -y
+    9  minikube start --vm-driver=none
+   10  apt pacman -S conntrack-tools
+   11  apt -y install conntrack-tools
+   12  apt install crictl
+   13  wget https://github.com/kubernetes-sigs/cri-tools/releases/download/$VERSION/crictl-$VERSION-linux-amd64.tar.gz
+   14  apt intall wget -y
+   15  apt-get intall wget -y
+   16  wget https://github.com/kubernetes-sigs/cri-tools/releases/download/$VERSION/crictl-$VERSION-linux-amd64.tar.gz
+   17  curl -L https://github.com/kubernetes-sigs/cri-tools/releases/download/$VERSION/crictl-${VERSION}-linux-amd64.tar.gz --output crictl-${VERSION}-linux-amd64.tar.gz
+   18  sudo tar zxvf crictl-$VERSION-linux-amd64.tar.gz -C /usr/local/bin
+   19  ls
+   20  sudo tar xvf crictl-$VERSION-linux-amd64.tar.gz -C /usr/local/bin
+   21  ls -al
+   22  tar xvf crictl--linux-amd64.tar.gz
+   23  apt install gzip -y
+   24  sudo tar zxvf crictl-$VERSION-linux-amd64.tar.gz -C /usr/local/bin
+   25  cd /usr/local/bin/
+   26  ls
+   27  cd
+   28  sudo  -zxvf crictl-$VERSION-linux-amd64.tar.gz -C /usr/local/bin
+   29  gunzip crictl--linux-amd64.tar.gz 
+   30  qunzip crictl--linux-amd64.tar.gz 
+   31  unzip crictl--linux-amd64.tar.gz 
+   32  apt install unzip
+   33  unzip crictl--linux-amd64.tar.gz 
+   34  qunzip crictl--linux-amd64.tar.gz 
+   35  gunzip crictl--linux-amd64.tar.gz 
+   36  wget https://github.com/kubernetes-sigs/cri-tools/releases/download/v1.26.0/crictl-v1.26.0-linux-amd64.tar.gz
+   37  sudo tar zxvf crictl-v1.26.0-linux-amd64.tar.gz -C /usr/local/bin
+   38  crictl --version
+   39  minikube start --vm-driver=none
+   40  minkube status
+   41  minikube status
+   42  kubectl version
+   43  systemctl start kubelet
+   44  systemctl start kubelet.service
+   45  kubectl get nodes
+   46  wget https://storage.googleapis.com/golang/getgo/installer_linux
+   47  chmod +x ./installer_linux
+   48  ./installer_linux
+   49  source ~/.bash_profile
+   50  ./installer_linux
+   51  source ~/.bash_profile
+   52  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+   53  sudo apt-get install  containerd.io docker-compose-plugin
+   54  ls
+   55  cd cri-dockerd
+   56  ./installer_linux
+   57  source ~/.bash_profile
+   58  minikube status
+   59  minikube start --vm-driver=none
+   60  wget  https://github.com/Mirantis/cri-dockerd
+   61  ls
+   62  cd cri-dockerd
+.   63  apt install cr
+   64  apt install cri-dockerd -y
+   65  cd cri-dockerd
+   66  apt install git -y
+   67  git --version
+   68  git clone https://github.com/Mirantis/cri-dockerd.git
+   69  ls
+   70  rm -rf cri-dockerd crictl--linux-amd64.tar.gz crictl-v1.26.0-linux-amd64.tar.gz  installer_linux 
+   71  git clone https://github.com/Mirantis/cri-dockerd.git
+   72  ls
+   73  cd cri-dockerd/
+   74  ls
+   75  mkdir -p /usr/local/bin
+   76  install -o root -g root -m 0755 cri-dockerd /usr/local/bin/cri-dockerd
+   77  cd 
+   78  install -o root -g root -m 0755 cri-dockerd /usr/local/bin/cri-dockerd
+   79  cd cri-dockerd/
+   80  make cri-dockerd
+   81  apt install make -y
+   82  make cri-dockerd
+   83  install -o root -g root -m 0755 cri-dockerd /usr/local/bin/cri-dockerd
+   84  make cri-dockerd
+   85  make
+   86  build cri-dockerd
+   87  make cri-dockerd
+   88  wget https://github.com/Mirantis/cri-dockerd/releases/download/v${VERSION}/cri-dockerd-${VERSION}.${ARCH}.tgz
+   89  apt install make -ycd
+   90  wget https://github.com/Mirantis/cri-dockerd/releases/download/v${VERSION}/cri-dockerd-${VERSION}.${ARCH}.tgzc
+   91  cd
+   92  minikube start --vm-driver=none
+   93  wget https://go.dev/dl/
+   94  ls
+   95  wget https://go.dev/dl/go1.22.2.src.tar.gz
+   96  ls
+   97  apt search go
+   98  apt install golang
+   99  go -version
+  100  cd cri-dockerd/
+  101  make cri-dockerd
+  102  mkdir -p /usr/local/bin
+  103  install -o root -g root -m 0755 cri-dockerd /usr/local/bin/cri-dockerd
+  104  apt install -o root -g root -m 0755 cri-dockerd /usr/local/bin/cri-dockerd
+  105  make cri-dockerd
+  106  systemctl enable --now cri-docker.socket
+  107  systemctl enable --now cri-dockerd
+  108  make cri-dockerd
+  109  make install
+  110  install -o root -g root -m 0755 cri-dockerd /usr/local/bin/cri-dockerd
+  111  install packaging/systemd/* /etc/systemd/system
+  112  sed -i -e 's,/usr/bin/cri-dockerd,/usr/local/bin/cri-dockerd,' /etc/systemd/system/cri-docker.service
+  113  systemctl daemon-reload
+  114  systemctl enable --now cri-docker.socket
+  115  cd
+  116  minikube start --vm-driver=none
+  117  CNI_PLUGIN_VERSION="<version_here>"
+  118  CNI_PLUGIN_TAR="cni-plugins-linux-amd64-$CNI_PLUGIN_VERSION.tgz" # change arch if not on amd64
+  119  CNI_PLUGIN_INSTALL_DIR="/opt/cni/bin"
+  120  curl -LO "https://github.com/containernetworking/plugins/releases/download/$CNI_PLUGIN_VERSION/$CNI_PLUGIN_TAR"
+  121  sudo mkdir -p "$CNI_PLUGIN_INSTALL_DIR"
+  122  sudo tar -xf "$CNI_PLUGIN_TAR" -C "$CNI_PLUGIN_INSTALL_DIR"
+  123  sudo tar -xcpf "$CNI_PLUGIN_TAR" -C "$CNI_PLUGIN_INSTALL_DIR"
+  124  sudo tar -xvpf "$CNI_PLUGIN_TAR" -C "$CNI_PLUGIN_INSTALL_DIR"
+  125  ls
+  126  tar xvf 'cni-plugins-linux-amd64-<version_here>.tgz' 
+  127  mkdir -p /etc/cni/net.d
+  128  cat >/etc/cni/net.d/10-mynet.conf <<EOF
+  129  {
+  130  	"cniVersion": "0.2.0",
+  131  	"name": "mynet",
+  132  	"type": "bridge",
+  133  	"bridge": "cni0",
+  134  	"isGateway": true,
+  135  	"ipMasq": true,
+  136  	"ipam": {
+  137  		"type": "host-local",
+  138  		"subnet": "10.22.0.0/16",
+  139  		"routes": [
+  140  			{ "dst": "0.0.0.0/0" }
+  141  		]
+  142  	}
+  143  }
+  144  EOF
+  145  cat >/etc/cni/net.d/99-loopback.conf <<EOF
+  146  {
+  147  	"cniVersion": "0.2.0",
+  148  	"name": "lo",
+  149  	"type": "loopback"
+  150  }
+  151  EOF
+  152  cd $GOPATH/src/github.com/containernetworking/plugins
+  153  git clone https://github.com/containernetworking/plugins.git
+  154  ls
+  155  cd $GOPATH/src/github.com/containernetworking/plugins
+  156  cd go/
+  157  ls
+  158  cd pkg
+  159  ls
+  160  cd
+  161  curl -L -o /opt/cni/bin/calico https://github.com/projectcalico/cni-plugin/releases/download/v3.14.0/calico-amd64
+  162  chmod 755 /opt/cni/bin/calico
+  163  curl -L -o /opt/cni/bin/calico-ipam https://github.com/projectcalico/cni-plugin/releases/download/v3.14.0/calico-ipam-amd64
+  164  chmod 755 /opt/cni/bin/calico-ipam
+  165  mkdir -p /etc/cni/net.d/
+  166  cp cni.kubeconfig /etc/cni/net.d/calico-kubeconfig
+  167  chmod 600 /etc/cni/net.d/calico-kubeconfig
+  168  chmod 755 /opt/cni/bin/calico && chmod 755 /opt/cni/bin/calico-ipam &&cp cni.kubeconfig /etc/cni/net.d/calico-kubeconfig
+  169  ls
+  170  cdp
+  171  cd plugins/
+  172  ls
+  173  cd plugins/
+  174  ls
+  175  cd
+  176  curl -L -o /opt/cni/bin/calico https://github.com/projectcalico/cni-plugin/releases/download/v3.14.0/calico-amd64
+  177  ls
+  178  minikube start --vm-driver=none
+  179  sudo mv /root/.kube /root/.minikube $HOME
+  180  sudo chown -R $USER $HOME/.kube $HOME/.minikube
+  181  minikube status
+  182  history
+  183  history >history.txt
